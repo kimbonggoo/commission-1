@@ -1,0 +1,78 @@
+@import './login.css';
+@import './signup.css';
+@import './main.css';
+
+:root {
+  --color-gray: #d9d9d9;
+  --color-gray-dark: #c0bebe;
+  --color-gray-light: #d4d3d3;
+  --color-accent: #fd9729;
+  --color-main: #f8b735;
+  --color-background: #101015;
+  --color-white: #fdfdfd;
+  --color-black: #101015;
+  --color-dark: #202024;
+  --color-border: #f6f7fb;
+  --color-gold: #d0901f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  cursor: default;
+  font-family: 'BMJua';
+  background-color: var(--color-background);
+  color: var(--color-gray-light);
+}
+
+h1 {
+  font-size: 42px;
+  padding: 24px 0;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:active,
+button:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+a {
+  color: var(--color-black);
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.accent {
+  color: var(--color-accent);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+.header .logo img {
+  width: 40px;
+}
+
+.header .login-btn {
+  padding: 8px 28px;
+  border-radius: 4px;
+  background-color: var(--color-main);
+}

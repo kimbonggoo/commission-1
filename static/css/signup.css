@@ -1,0 +1,137 @@
+.signup {
+  max-width: 512px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
+
+.signup-title,
+.agree-title {
+  border-bottom: 2px solid var(--color-gray-dark);
+  padding: 1rem 0;
+}
+
+.agree-title {
+  margin-top: 2rem;
+}
+
+.signup-title,
+.agree-title h2 {
+  font-size: 24px;
+}
+
+.signup-subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signup-subtitle h3 {
+  font-size: 18px;
+}
+
+.signup-subtitle h3,
+.signup-subtitle p {
+  margin: 0;
+}
+
+.signup-subtitle p {
+  font-size: 12px;
+  margin-bottom: 1rem;
+}
+
+#signupForm {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+#signupForm input {
+  padding: 16px 12px;
+  margin: 12px 0 0;
+  border-radius: 8px;
+  transition: 300ms;
+  font-family: 'sans-serif';
+}
+
+#signupForm input[type='checkbox'] {
+  transform: scale(1.35);
+  margin-right: 4px;
+}
+
+#signupForm input[type='password'] {
+}
+
+#signupForm input:focus {
+  outline: none;
+  border: 3px solid var(--color-main);
+}
+
+#signupForm label {
+  margin-top: 1rem;
+}
+
+#signupForm > button {
+  background-color: var(--color-main);
+  padding: 1rem;
+  margin-top: 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--color-white);
+  transition: 300ms;
+}
+
+#signupForm button:hover {
+  opacity: 0.95;
+}
+
+.errorlist {
+  color: red;
+}
+
+.id-box,
+.pw-box,
+.pw-check-box,
+.email-box,
+.name-box,
+.phone-box,
+.exchange-box,
+.uid-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+.exchange {
+  display: flex;
+  flex-direction: column;
+}
+
+.agree {
+  margin-bottom: 1rem;
+}
+
+.agree-item-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.agree-item {
+  margin: 8px 0;
+}
+
+.use-btn {
+  padding: 0;
+}
+
+.modal h1 {
+  padding: 0;
+}
+
+.modal-body {
+  height: 700px;
+  overflow-y: auto;
+}

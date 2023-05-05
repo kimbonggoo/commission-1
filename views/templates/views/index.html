@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load humanize %}
+
+{% block content %}
+
+<main class="main">
+
+  <div class="logo" style="text-align: center;">
+    <img src="{% static 'img/logo.png' %}" alt="logo" width="300">
+  </div>
+
+  <!-- TOP-RANK -->
+  <section class="top-rank">
+    <h3>랭킹 TOP3</h3>
+    <div class="top-rank-wrap">
+      <table>
+        <thead>
+          <th>순위</th>
+          <th>UID</th>
+          <th>총누적금(원)</th>
+        </thead>
+        <tbody>
+
+          <tr>
+            <td>1</td>
+            <td>{{ top_ranks.0.1|slice:'3' }}.....</td>
+            <td>{{ top_ranks.0.0|intcomma }}</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>{{ top_ranks.1.1|slice:'3' }}.....</td>
+            <td>{{ top_ranks.1.0|intcomma }}</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>{{ top_ranks.2.1|slice:'3' }}.....</td>
+            <td>{{ top_ranks.2.0|intcomma }}</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- MY-INFO -->
+  <section class="my-info">
+    <div class="my-info-wrap">
+      <div class="my-info-item">
+        <div class="my-info-icon">
+          <span class="material-symbols-outlined">
+            person_add
+          </span>
+        </div>
+        <p class="my-info-num">{{ lower_count }}</p>
+        <p class="my-info-title">등록</p>
+      </div>
+      <div class="my-info-item">
+        <div class="my-info-icon">
+          <span class="material-symbols-outlined">
+            paid
+          </span>
+        </div>
+        <p class="my-info-num">{{ uid }}</p>
+        <p class="my-info-title">MY UID</p>
+      </div>
+      <div class="my-info-item">
+        <div class="my-info-icon">
+          <span class="material-symbols-outlined">
+            diamond
+          </span>
+        </div>
+        <p class="my-info-num">VVIP</p>
+        <p class="my-info-title">등급</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- MY-COMMISSION -->
+  <section class="my-commission">
+    <h3>나의 적립금</h3>
+    <div class="my-commission-wrap">
+      <div class="total">
+        <h5>총누적금액</h5>
+        <p>{{ total_rebate|intcomma }}</p>
+      </div>
+      <div class="withdraw">
+        <h5>인출가능금액</h5>
+        <p>{{ withdrawal|intcomma }}</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{% endblock content %}

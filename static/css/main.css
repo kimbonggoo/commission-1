@@ -1,0 +1,159 @@
+.main {
+  max-width: 512px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* TOP-RANK */
+.top-rank {
+  margin-top: 2rem;
+  border: 1px solid var(--color-gray);
+  border-radius: 1rem;
+  border-color: var(--color-main);
+  background: rgb(33, 33, 37);
+  background: linear-gradient(
+    90deg,
+    rgba(33, 33, 37, 1) 20%,
+    rgba(22, 22, 26, 1) 40%,
+    rgba(16, 16, 21, 1) 75%
+  );
+}
+
+.top-rank h3 {
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-gray);
+  border-color: var(--color-main);
+  margin: 0;
+  text-align: center;
+  background-color: var(--color-main);
+  color: var(--color-black);
+  border-radius: 15px 15px 0 0;
+}
+
+.top-rank-wrap {
+  padding: 1rem;
+}
+
+.top-rank table {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.top-rank table thead {
+  color: var(--color-main);
+}
+
+.top-rank table tbody td {
+  padding: 8px 0;
+}
+
+.top-rank table tbody tr td:first-child {
+  font-weight: bold;
+  color: var(--color-main);
+}
+
+/* MY-INFO */
+.my-info {
+  margin: 3rem 0;
+}
+
+.my-info-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.my-info-item {
+  border: 1px solid var(--color-gray);
+  border-radius: 1rem;
+  border-color: var(--color-main);
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  background: rgb(33, 33, 37);
+  background: linear-gradient(
+    180deg,
+    rgba(33, 33, 37, 1) 20%,
+    rgba(22, 22, 26, 1) 40%,
+    rgba(16, 16, 21, 1) 75%
+  );
+}
+
+.my-info-item:nth-child(1) {
+  flex-grow: 1;
+}
+.my-info-item:nth-child(2) {
+  flex-grow: 1.25;
+  margin: 0 20px;
+}
+.my-info-item:nth-child(3) {
+  flex-grow: 1;
+}
+
+.my-info-item:last-child {
+  color: var(--color-main);
+  border-color: var(--color-main);
+}
+
+.my-info-item p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.my-info-num {
+  color: var(--color-main);
+  font-size: 28px;
+}
+
+.my-info-icon span {
+  font-size: 38px;
+  color: var(--color-main);
+}
+
+/* MY-COMMISSION */
+.my-commission {
+  border: 1px solid var(--color-gray);
+  border-radius: 1rem;
+  margin-bottom: 5rem;
+  border-color: var(--color-main);
+  background: rgb(33, 33, 37);
+  background: linear-gradient(
+    90deg,
+    rgba(33, 33, 37, 1) 20%,
+    rgba(22, 22, 26, 1) 40%,
+    rgba(16, 16, 21, 1) 75%
+  );
+}
+
+.my-commission h3 {
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-gray);
+  border-color: var(--color-main);
+  color: var(--color-main);
+  margin: 0;
+  text-align: center;
+  background-color: var(--color-main);
+  color: var(--color-black);
+  border-radius: 15px 15px 0 0;
+}
+
+.my-commission-wrap {
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.my-commission-wrap p {
+  margin: 0;
+  font-size: 38px;
+  font-weight: bold;
+  color: var(--color-main);
+}
+
+.total,
+.withdraw {
+  text-align: center;
+}
