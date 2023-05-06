@@ -31,6 +31,7 @@ DEBUG = os.getenv("DEBUG")
 
 ALLOWED_HOSTS = []
 
+CSRF_TRUSTED_ORIGINS = ["http://3.36.222.137", "https://3.36.222.137"]
 
 # Application definition
 
