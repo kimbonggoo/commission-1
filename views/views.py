@@ -58,18 +58,18 @@ def all_rebate():
     top_ranks = []
 
     for user in all_user:
-        if user.username == 'qudwls':
+        if user.username == 'admin':
             continue
         
         try:
-            lower_uids = user.lower_uids.split(',')
+            all_lower_uids = user.lower_uids.split(',')
             data = TapbitData.objects.get(uid=user.uid)
 
             # 하부 리베이트
             lower_rebate = 0
             try:
-                for l_uid in lower_uids:
-                    l_data = TapbitData.objects.get(uid=l_uid)
+                for all_l_uid in all_lower_uids:
+                    l_data = TapbitData.objects.get(uid=all_l_uid)
                     lower_rebate += int(l_data.upper_rebate)
             except:
                 pass
