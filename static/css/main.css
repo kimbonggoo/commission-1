@@ -85,10 +85,12 @@
 .my-info-item:nth-child(1) {
   flex-grow: 1;
 }
+
 .my-info-item:nth-child(2) {
   flex-grow: 1.25;
   margin: 0 20px;
 }
+
 .my-info-item:nth-child(3) {
   flex-grow: 1;
 }
@@ -101,6 +103,10 @@
 .my-info-item p {
   margin: 0;
   font-weight: bold;
+}
+
+.my-info-text {
+  text-align: center;
 }
 
 .my-info-num {
@@ -148,7 +154,7 @@
 
 .my-commission-wrap p {
   margin: 0;
-  font-size: 38px;
+  font-size: 36px;
   font-weight: bold;
   color: var(--color-main);
 }
@@ -156,4 +162,36 @@
 .total,
 .withdraw {
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  /* Info */
+  .my-info-wrap {
+    flex-direction: column;
+  }
+  .my-info-item {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .my-info-item:nth-child(2) {
+    flex-grow: 1;
+    margin: 1rem 0;
+  }
+  .my-info-icon span {
+    font-size: 54px;
+  }
+  .my-info-text {
+    width: 150px;
+  }
+  .my-info-num {
+    font-size: 36px;
+  }
+
+  /* Commission */
+  .my-commission-wrap {
+    flex-direction: column;
+  }
+  .withdraw {
+    margin-top: 2rem;
+  }
 }
