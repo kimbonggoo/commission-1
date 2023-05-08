@@ -24,7 +24,10 @@ body {
   margin: 0;
   cursor: default;
   font-family: 'BMJua';
-  background-color: var(--color-background);
+  background-image: url('../img/bg.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   color: var(--color-gray-light);
 }
 
