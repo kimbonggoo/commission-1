@@ -100,9 +100,17 @@
 
   <!-- BANNER -->
   <section class="banner">
-    <video autoplay muted loop="">
-      <source type="video/mp4" src="{% static 'img/banner-video.mp4' %}">
-    </video>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="{% static 'img/banner.png' %}" alt="banner" />
+        </div>
+        <div class="swiper-slide">
+          <img src="{% static 'img/banner-1.png' %}" alt="banner" />
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- MY-COMMISSION -->
@@ -127,3 +135,20 @@
 </main>
 
 {% endblock content %}
+
+
+{% block js %}
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 0,
+    centeredSlides: true,
+    autoplay: {
+      delay: 8000,
+    },
+  });
+</script>
+{% endblock js %}
