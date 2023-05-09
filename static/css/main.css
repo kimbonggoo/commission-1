@@ -31,7 +31,7 @@
 }
 
 .top-rank-wrap {
-  padding: 1rem 1.5rem;
+  padding: 1rem 0;
 }
 
 .top-rank table {
@@ -42,10 +42,6 @@
 
 .top-rank table thead {
   color: var(--color-main);
-}
-
-.top-rank table thead tr th {
-  padding-right: 21px;
 }
 
 .rank-list-wrap {
