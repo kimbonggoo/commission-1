@@ -44,6 +44,10 @@
   color: var(--color-main);
 }
 
+.top-rank table thead tr th {
+  padding-right: 21px;
+}
+
 .rank-list-wrap {
   position: relative;
   height: 220px;
@@ -52,7 +56,7 @@
 
 .rank-list {
   list-style: none;
-  padding-left: 12px;
+  padding-left: 0;
   margin: 0;
   position: absolute;
   top: 0;
@@ -80,10 +84,11 @@
 
 .rank-item span:nth-child(2) {
   width: 25%;
+  margin-left: 12px;
 }
 
 .rank-item span:nth-child(3) {
-  width: 57%;
+  width: 52%;
 }
 
 /* MY-INFO */
