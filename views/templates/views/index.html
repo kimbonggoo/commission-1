@@ -24,34 +24,34 @@
       <div class="rank-list-wrap">
         <ul class="rank-list">
           <li class="rank-item">
-            <span>1</span> <span>{{ top_ranks.0.1 }}</span> <span>{{ top_ranks.0.0|intcomma }}</span>
+            <span>1</span> <span>{{ top_ranks.0.1|slice:':6' }}**</span> <span>{{ top_ranks.0.0|intcomma }}</span>
           </li>
           <li class="rank-item">
-            <span>2</span> <span>{{ top_ranks.0.1 }}</span> <span>{{ top_ranks.0.0|intcomma }}</span>
+            <span>2</span> <span>{{ top_ranks.1.1|slice:':6' }}**</span> <span>{{ top_ranks.1.0|intcomma }}</span>
           </li>
           <li class="rank-item">
-            <span>3</span> <span>{{ top_ranks.0.1 }}</span> <span>{{ top_ranks.0.0|intcomma }}</span>
+            <span>3</span> <span>{{ top_ranks.2.1|slice:':6' }}**</span> <span>{{ top_ranks.2.0|intcomma }}</span>
           </li>
           <li class="rank-item">
-            <span>4</span> <span>{{ top_ranks.0.1 }}</span> <span>{{ top_ranks.0.0|intcomma }}</span>
+            <span>4</span> <span>{{ top_ranks.3.1|slice:':6' }}**</span> <span>{{ top_ranks.3.0|intcomma }}</span>
           </li>
           <li class="rank-item">
-            <span>5</span> <span>{{ top_ranks.0.1 }}</span> <span>{{ top_ranks.0.0|intcomma }}</span>
+            <span>5</span> <span>{{ top_ranks.4.1|slice:':6' }}**</span> <span>{{ top_ranks.4.0|intcomma }}</span>
           </li>
           <li class="rank-item">
-            <span>6</span> <span>{{ top_ranks.0.1 }}</span> <span>{{ top_ranks.0.0|intcomma }}</span>
+            <span>6</span> <span>{{ top_ranks.5.1|slice:':6' }}**</span> <span>{{ top_ranks.5.0|intcomma }}</span>
           </li>
           <li class="rank-item">
-            <span>7</span> <span>{{ top_ranks.0.1 }}</span> <span>{{ top_ranks.0.0|intcomma }}</span>
+            <span>7</span> <span>{{ top_ranks.6.1|slice:':6' }}**</span> <span>{{ top_ranks.6.0|intcomma }}</span>
           </li>
           <li class="rank-item">
-            <span>8</span> <span>{{ top_ranks.0.1 }}</span> <span>{{ top_ranks.0.0|intcomma }}</span>
+            <span>8</span> <span>{{ top_ranks.7.1|slice:':6' }}**</span> <span>{{ top_ranks.7.0|intcomma }}</span>
           </li>
           <li class="rank-item">
-            <span>9</span> <span>{{ top_ranks.0.1 }}</span> <span>{{ top_ranks.0.0|intcomma }}</span>
+            <span>9</span> <span>{{ top_ranks.8.1|slice:':6' }}**</span> <span>{{ top_ranks.8.0|intcomma }}</span>
           </li>
           <li class="rank-item">
-            <span>10</span> <span>{{ top_ranks.0.1 }}</span> <span>{{ top_ranks.0.0|intcomma }}</span>
+            <span>10</span> <span>{{ top_ranks.9.1|slice:':6' }}**</span> <span>{{ top_ranks.9.0|intcomma }}</span>
           </li>
         </ul>
       </div>
@@ -96,6 +96,13 @@
       </div>
     </div>
     </div>
+  </section>
+
+  <!-- BANNER -->
+  <section class="banner">
+    <video autoplay muted loop="">
+      <source type="video/mp4" src="{% static 'img/banner-video.mp4' %}">
+    </video>
   </section>
 
   <!-- MY-COMMISSION -->

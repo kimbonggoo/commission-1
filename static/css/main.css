@@ -162,6 +162,17 @@
   }
 }
 
+.banner {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+.banner video {
+  width: 100%;
+  border-radius: 1rem;
+}
+
 /* MY-COMMISSION */
 .my-commission {
   border: 1px solid var(--color-gray);
