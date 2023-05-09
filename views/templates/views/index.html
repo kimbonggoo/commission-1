@@ -12,7 +12,7 @@
 
   <!-- TOP-RANK -->
   <section class="top-rank">
-    <h3>랭킹 TOP3</h3>
+    <h3>랭킹 TOP10</h3>
     <div class="top-rank-wrap">
       <table>
         <thead>
@@ -20,26 +20,41 @@
           <th>UID</th>
           <th>총누적금(원)</th>
         </thead>
-        <tbody>
-
-          <tr>
-            <td>1</td>
-            <td>{{ top_ranks.0.1 }}</td>
-            <td>{{ top_ranks.0.0|intcomma }}</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>{{ top_ranks.1.1 }}</td>
-            <td>{{ top_ranks.1.0|intcomma }}</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>{{ top_ranks.2.1 }}</td>
-            <td>{{ top_ranks.2.0|intcomma }}</td>
-          </tr>
-
-        </tbody>
       </table>
+      <div class="rank-list-wrap">
+        <ul class="rank-list">
+          <li class="rank-item">
+            <span>1</span> <span>{{ top_ranks.0.1 }}</span> <span>{{ top_ranks.0.0|intcomma }}</span>
+          </li>
+          <li class="rank-item">
+            <span>2</span> <span>{{ top_ranks.0.1 }}</span> <span>{{ top_ranks.0.0|intcomma }}</span>
+          </li>
+          <li class="rank-item">
+            <span>3</span> <span>{{ top_ranks.0.1 }}</span> <span>{{ top_ranks.0.0|intcomma }}</span>
+          </li>
+          <li class="rank-item">
+            <span>4</span> <span>{{ top_ranks.0.1 }}</span> <span>{{ top_ranks.0.0|intcomma }}</span>
+          </li>
+          <li class="rank-item">
+            <span>5</span> <span>{{ top_ranks.0.1 }}</span> <span>{{ top_ranks.0.0|intcomma }}</span>
+          </li>
+          <li class="rank-item">
+            <span>6</span> <span>{{ top_ranks.0.1 }}</span> <span>{{ top_ranks.0.0|intcomma }}</span>
+          </li>
+          <li class="rank-item">
+            <span>7</span> <span>{{ top_ranks.0.1 }}</span> <span>{{ top_ranks.0.0|intcomma }}</span>
+          </li>
+          <li class="rank-item">
+            <span>8</span> <span>{{ top_ranks.0.1 }}</span> <span>{{ top_ranks.0.0|intcomma }}</span>
+          </li>
+          <li class="rank-item">
+            <span>9</span> <span>{{ top_ranks.0.1 }}</span> <span>{{ top_ranks.0.0|intcomma }}</span>
+          </li>
+          <li class="rank-item">
+            <span>10</span> <span>{{ top_ranks.0.1 }}</span> <span>{{ top_ranks.0.0|intcomma }}</span>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -88,15 +103,19 @@
     <h3>나의 적립금</h3>
     <div class="my-commission-wrap">
       <div class="total">
-        <h5>총누적금액</h5>
+        <h5>총누적금액(원)</h5>
         <p>{{ total_rebate|intcomma }}</p>
       </div>
       <div class="withdraw">
-        <h5>인출가능금액</h5>
+        <h5>인출가능금액(원)</h5>
         <p>{{ withdrawal|intcomma }}</p>
       </div>
     </div>
   </section>
+
+  <a href="http://pf.kakao.com/_usVpxj/chat">
+    <button class="withdrawal-btn">인출하기</button>
+  </a>
 
 </main>
 

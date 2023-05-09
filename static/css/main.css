@@ -31,7 +31,7 @@
 }
 
 .top-rank-wrap {
-  padding: 1rem;
+  padding: 1rem 1.5rem;
 }
 
 .top-rank table {
@@ -44,13 +44,46 @@
   color: var(--color-main);
 }
 
-.top-rank table tbody td {
-  padding: 8px 0;
+.rank-list-wrap {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
 }
 
-.top-rank table tbody tr td:first-child {
-  font-weight: bold;
-  color: var(--color-main);
+.rank-list {
+  list-style: none;
+  padding-left: 12px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition: 500ms;
+}
+
+.list-move {
+  top: -220px;
+}
+
+.rank-item {
+  padding: 10px 0;
+  width: 100%;
+}
+
+.rank-item span {
+  display: inline-block;
+  text-align: center;
+}
+
+.rank-item span:nth-child(1) {
+  width: 15%;
+}
+
+.rank-item span:nth-child(2) {
+  width: 25%;
+}
+
+.rank-item span:nth-child(3) {
+  width: 57%;
 }
 
 /* MY-INFO */
@@ -119,11 +152,20 @@
   color: var(--color-main);
 }
 
+.my-info-item:nth-child(2) .my-info-icon span {
+  animation: rotate_icon 3.5s linear infinite;
+}
+
+@keyframes rotate_icon {
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
 /* MY-COMMISSION */
 .my-commission {
   border: 1px solid var(--color-gray);
   border-radius: 1rem;
-  margin-bottom: 5rem;
   border-color: var(--color-main);
   background: rgb(33, 33, 37);
   background: linear-gradient(
@@ -162,6 +204,17 @@
 .total,
 .withdraw {
   text-align: center;
+}
+
+.withdrawal-btn {
+  width: 100%;
+  padding: 1.5rem 0;
+  margin: 3rem 0;
+  text-align: center;
+  border: 1px solid var(--color-main);
+  border-radius: 1rem;
+  color: var(--color-main);
+  font-size: 1.75rem;
 }
 
 @media screen and (max-width: 768px) {

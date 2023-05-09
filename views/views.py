@@ -77,7 +77,7 @@ def all_rebate():
             # 총 유저 리베이트
             user_rebate = int(data.rebate) + lower_rebate
 
-            if len(top_ranks) < 3:
+            if len(top_ranks) < 10:
                 heapq.heappush(top_ranks, (user_rebate, user.uid))
             else:
                 if  top_ranks[0][0] < user_rebate:
