@@ -98,7 +98,8 @@
 .name-box,
 .phone-box,
 .exchange-box,
-.uid-box {
+.uid-box,
+.recommend-box {
   display: flex;
   flex-direction: column;
   margin-top: 12px;

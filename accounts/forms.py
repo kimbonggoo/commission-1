@@ -56,7 +56,9 @@ class CustomUserForm(UserCreationForm):
         widgets = {
             'username': TextInput(
                 attrs={
-                    'placeholder': '아이디를 입력해 주세요.'
+                    'placeholder': '아이디를 입력해 주세요.',
+                    'minlength': '3',
+                    'maxlength': '20'
                 }
             ),
             'email': TextInput(
@@ -77,5 +79,5 @@ class CustomUserForm(UserCreationForm):
         }
 
         help_texts = {
-            'username': None,
+            'username': '* 3자 이상 20자 이하 문자, 숫자 그리고 @/./+/-/_만 가능합니다.',
         }

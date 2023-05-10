@@ -13,6 +13,7 @@ def signup(request):
             new_user = form.save(commit=False)
             new_user.exchange = request.POST.get('exchange')
             new_user.uid = request.POST.get('uid')
+            new_user.upper_uid1 = request.POST.get('upper_uid1')
             new_user.save()
             auth_login(request, user=new_user)
             return redirect('views:main')
