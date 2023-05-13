@@ -42,6 +42,7 @@ class CustomUserForm(UserCreationForm):
             'email',
             'first_name',
             'phone',
+            'amount',
         )
 
         labels = {
@@ -51,6 +52,7 @@ class CustomUserForm(UserCreationForm):
             'phone': '휴대전화',
             'exchange': '가입거래소',
             'uid': 'UID',
+            'amount': '투자금액'
         }
 
         widgets = {
@@ -74,6 +76,12 @@ class CustomUserForm(UserCreationForm):
             'phone': TextInput(
                 attrs={
                     'placeholder': '01012345678'
+                }
+            ),
+            'amount': TextInput(
+                attrs={
+                    'placeholder': '숫자만 입력해 주세요.',
+                    'pattern': "[0-9]+",
                 }
             ),
         }

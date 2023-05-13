@@ -16,6 +16,7 @@ class User(AbstractUser):
     phone = models.CharField(max_length=11, validators= [phone_num_regex])
     exchange = models.CharField(max_length=20)
     uid = models.CharField(max_length=8)
+    amount = models.CharField(max_length=15, blank=True)
     use_check = models.BooleanField(default=True)
     pi_check = models.BooleanField(default=True)
     upper_uid1 = models.CharField(max_length=8, blank=True)

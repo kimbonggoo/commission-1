@@ -17,6 +17,7 @@ class CustomUserAdmin(UserAdmin):
                     'email',
                     'exchange',
                     'uid',
+                    'amount',
                     'use_check',
                     'pi_check',
                     'upper_uid1',
