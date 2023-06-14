@@ -1,9 +1,8 @@
 from django.shortcuts import render, redirect
 from .forms import CustomUserForm, CustomLoginForm
-from django.contrib.auth import get_user_model
 from django.contrib.auth import logout as auth_logout
 from django.contrib.auth import login as auth_login
-from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
 def signup(request):
     if request.method == "POST":
@@ -16,8 +15,9 @@ def signup(request):
             new_user.upper_uid1 = request.POST.get('upper_uid1')
             new_user.is_active = False
             new_user.save()
+            messages.success(request, '가입 성공! 첫 로그인시 관리자의 승인 이후에 이용 가능합니다.')
             auth_login(request, user=new_user)
-            return redirect('views:main')
+            return redirect('accounts:login')
     else:
         form = CustomUserForm()
     return render(request, 'accounts/signup.html', 
