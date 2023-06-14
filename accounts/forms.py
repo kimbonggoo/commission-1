@@ -12,6 +12,12 @@ class CustomLoginForm(AuthenticationForm):
             }
         )
     )
+    error_messages = {
+        "invalid_login": (
+            "올바른 사용자 아이디와 비밀번호를 입력해주세요. "
+            "계정 활성화가 필요한 경우에는 관리자에게 문의해주시길 바랍니다."
+        ),
+    }
 
 class CustomUserForm(UserCreationForm):
 
